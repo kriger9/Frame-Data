@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Tilts</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	
+	<body>
+		<script>
+			function tiltDropdown() {
+				document.getElementById("Tilts").classList.toggle("show");
+			}
+
+			// Close the dropdown menu if the user clicks outside of it
+			window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+			
+			function smashDropdown() {
+				document.getElementById("Smashes").classList.toggle("show");
+			}
+
+			// Close the dropdown menu if the user clicks outside of it
+			window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+			
+			function specialDropdown() {
+				document.getElementById("Specials").classList.toggle("show");
+			}
+
+			// Close the dropdown menu if the user clicks outside of it
+			window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+			
+			function aerialDropdown() {
+				document.getElementById("Aerials").classList.toggle("show");
+			}
+
+			// Close the dropdown menu if the user clicks outside of it
+			window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+		</script>
+		
+		<div id="content">
+			<div id="nav"> 
+			
+				<div class="dropdown">
+					<button onclick="tiltDropdown()" class="dropbtn"><a href="./tilts.html">Tilts</a></button>
+					<div id="Tilts" class="dropdown-content">
+						<a href="tilts.html#1">Forward tilt</a>
+						<a href="tilts.html#2">Up tilt</a>
+						<a href="tilts.html#3">Down tilt</a>
+						<a href="tilts.html#4">Jab</a>
+					</div>
+				</div>
+				
+				<div class="dropdown">
+					<button onclick="smashDropdown()" class="dropbtn"><a href="./Smashes.html">Smashes</a></button>
+					<div id="Smashes" class="dropdown-content">
+						<a href="smashes.html#5">Forward smash</a>
+						<a href="smashes.html#6">Up smash</a>
+						<a href="smashes.html#7">Down smash</a>
+					</div>
+				</div>
+				
+				<div class="dropdown">
+					<button onclick="specialDropdown()" class="dropbtn"><a href="./Specials.html">Specials</a></button>
+					<div id="Specials" class="dropdown-content">
+						<a href="specials.html#8">Forward b</a>
+						<a href="specials.html#9">Up b</a>
+						<a href="#specials.html#10">Down b</a>
+						<a href="#specials.html#11">Neutral b</a>
+					</div>
+				</div>
+				
+				<div class="dropdown">
+					<button onclick="aerialDropdown()" class="dropbtn"><a href="./Aerials.html">Aerials</a></button>
+					<div id="Aerials" class="dropdown-content">
+						<a href="aerials.html#12">Forward air</a>
+						<a href="aerials.html#13">Up air</a>
+						<a href="aerials.html#14">Down air</a>
+						<a href="aerials.html#15">Neutral air</a>
+						<a href="aerials.html#16">Back air</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="header">
+				<p>Tilts</p>
+		</div>
+		
+		
+		<div id="1"></div><h1>Forward tilt</h1> <br><br>
+		<img src="ftilt.gif" heigth="230px" width="320px">
+		<p>Total: 29 <br> Hit: 6-8  <br><br> _________________</p>
+		
+		 <div id="2"></div><h1>Up tilt</h1><br><br>
+		<img src="utilt.gif" heigth="230px" width="320px">
+		<p>Total: 29 <br> Hit: 8-12  <br><br> _________________</p>
+		
+		 <div id="3"></div><h1>Down tilt</h1><br><br>
+		<img src="dtilt.gif" heigth="230px" width="320px">
+		<p>Total: 23 <br> Hit: 8-10  <br><br> _________________</p>
+		
+		 <div id="4"></div><h1>Jab</h1><br><br>
+		<img src="jab.gif" heigth="230px" width="320px">
+		<p>Total: 17<br>Hit: 3-5  <br><br> _________________</p>
+	</body>
+	
+</html>
